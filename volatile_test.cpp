@@ -4,8 +4,7 @@
 // which they each use an hardcoded prime (29 for one thread, 31 for the other). When the
 // sum is 60, we know that both threads are done.
 //
-// I noticed that contentsion gets a lot worse for global variables than member variables,
-// at least on x64
+// I noticed that contention gets way worse for global variables than members on x64.
 
 
 #include <atomic>
